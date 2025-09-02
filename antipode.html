@@ -17,7 +17,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_17a362be638cc13b760dd9891e46885b {
+                #map_f00ef607f048715949141162ac3065a0 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -54,16 +54,16 @@
 <body>
     
     
-            <div class="folium-map" id="map_17a362be638cc13b760dd9891e46885b" ></div>
+            <div class="folium-map" id="map_f00ef607f048715949141162ac3065a0" ></div>
         
 </body>
 <script>
     
     
-            var map_17a362be638cc13b760dd9891e46885b = L.map(
-                "map_17a362be638cc13b760dd9891e46885b",
+            var map_f00ef607f048715949141162ac3065a0 = L.map(
+                "map_f00ef607f048715949141162ac3065a0",
                 {
-                    center: [-40.09, -176.53],
+                    center: [6.5244, 3.3792],
                     crs: L.CRS.EPSG3857,
                     ...{
   "zoom": 3,
@@ -78,7 +78,7 @@
 
         
     
-            var tile_layer_3289a2295e692bf43962bff14a58a200 = L.tileLayer(
+            var tile_layer_2b044ccf1f10f5a1346fb92a27321c09 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -95,34 +95,93 @@
             );
         
     
-            tile_layer_3289a2295e692bf43962bff14a58a200.addTo(map_17a362be638cc13b760dd9891e46885b);
+            tile_layer_2b044ccf1f10f5a1346fb92a27321c09.addTo(map_f00ef607f048715949141162ac3065a0);
         
     
-            var marker_71fad4915134207f1e6600aebac29a24 = L.marker(
-                [-40.09, -176.53],
+            var marker_43441a8bff27fbeee70aa1435247e0b1 = L.marker(
+                [6.5244, 3.3792],
                 {
 }
-            ).addTo(map_17a362be638cc13b760dd9891e46885b);
+            ).addTo(map_f00ef607f048715949141162ac3065a0);
         
     
-        var popup_35d6dd27bc31d6bc062575fe841da9b1 = L.popup({
+            var icon_dffea4c79daec25f563e2d4eb74568f1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4b6d385837456533f5a4e9cfcfc8c1e7 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_aeea345e09ec723e28c5ab107e5458ab = $(`<div id="html_aeea345e09ec723e28c5ab107e5458ab" style="width: 100.0%; height: 100.0%;">Antipode: -40.09, -176.53</div>`)[0];
-                popup_35d6dd27bc31d6bc062575fe841da9b1.setContent(html_aeea345e09ec723e28c5ab107e5458ab);
+                var html_2a766f23840a9334320916ae57d298c0 = $(`<div id="html_2a766f23840a9334320916ae57d298c0" style="width: 100.0%; height: 100.0%;">Lagos, Nigeria: 6.5244, 3.3792</div>`)[0];
+                popup_4b6d385837456533f5a4e9cfcfc8c1e7.setContent(html_2a766f23840a9334320916ae57d298c0);
             
         
 
-        marker_71fad4915134207f1e6600aebac29a24.bindPopup(popup_35d6dd27bc31d6bc062575fe841da9b1)
+        marker_43441a8bff27fbeee70aa1435247e0b1.bindPopup(popup_4b6d385837456533f5a4e9cfcfc8c1e7)
         ;
 
         
     
     
-            marker_71fad4915134207f1e6600aebac29a24.bindTooltip(
+            marker_43441a8bff27fbeee70aa1435247e0b1.bindTooltip(
+                `<div>
+                     Original Location
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_43441a8bff27fbeee70aa1435247e0b1.setIcon(icon_dffea4c79daec25f563e2d4eb74568f1);
+            
+    
+            var marker_ef4fcfc994247b2edc10e996c8dec907 = L.marker(
+                [-6.5244, -176.6208],
+                {
+}
+            ).addTo(map_f00ef607f048715949141162ac3065a0);
+        
+    
+            var icon_e8cf3492f9367c7a4065b3525dbfe3c7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_82d62e1387fb80fdbfc39096bae96bda = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_97cab4e412040e9a1165250d8c7a55b0 = $(`<div id="html_97cab4e412040e9a1165250d8c7a55b0" style="width: 100.0%; height: 100.0%;">Antipode: -6.5244, -176.6208</div>`)[0];
+                popup_82d62e1387fb80fdbfc39096bae96bda.setContent(html_97cab4e412040e9a1165250d8c7a55b0);
+            
+        
+
+        marker_ef4fcfc994247b2edc10e996c8dec907.bindPopup(popup_82d62e1387fb80fdbfc39096bae96bda)
+        ;
+
+        
+    
+    
+            marker_ef4fcfc994247b2edc10e996c8dec907.bindTooltip(
                 `<div>
                      Antipode Location
                  </div>`,
@@ -131,5 +190,8 @@
 }
             );
         
+    
+                marker_ef4fcfc994247b2edc10e996c8dec907.setIcon(icon_e8cf3492f9367c7a4065b3525dbfe3c7);
+            
 </script>
 </html>
